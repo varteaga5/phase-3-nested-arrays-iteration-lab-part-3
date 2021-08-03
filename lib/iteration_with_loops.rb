@@ -11,10 +11,10 @@ def join_nested_strings(src)
     j = 0
     while j < src[i].length do
       # check if current element is a string 
-      if src[i][j].is_a?(String) == true 
+      new_arr << src[i][j] if src[i][j].is_a?(String) == true 
         # if it is, then shovel to new arr
-        new_arr << src[i][j]  
-      end
+        
+      
         j += 1
     end
     i += 1
